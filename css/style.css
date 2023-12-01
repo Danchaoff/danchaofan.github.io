@@ -1,0 +1,302 @@
+/* 重置样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body{
+    background-color: #fef9f3;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+h2 {
+    padding-left: 15px;
+    margin: 20px 0;
+    color: #35B579;
+    border-left: 8px solid #35B579;
+}
+
+h3{
+    color: white;
+    margin-bottom: 10px;
+}
+p {
+    color: #414141;
+    font-size: 16px;
+}
+
+/* common style */
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clearboth::after {
+    content: '';
+    display: block;
+    clear: both;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.navbgcolor{
+    background-color: #6BB592;
+}
+
+.column-img{
+    overflow: hidden;
+}
+
+.column-img img{
+    vertical-align: top;
+}
+/* 导航 */
+.nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    background-color: #1e6845;
+}
+
+.nav ul{
+    padding: 0 220px;
+}
+.nav ul>li {
+    float: left;
+}
+
+.nav ul>li>a {
+    display: inline-block;
+    height: 60px;
+    padding: 0 20px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.nav ul>li a:hover {
+    background-color: #6BB592;
+}
+
+/* banner  */
+.banner {
+    height: 320px;
+    background: url(../images/banner.jpeg) no-repeat center -320px/cover;
+}
+
+.main {
+    margin: 20px 0;
+}
+
+.main p{
+    text-indent: 2em;
+    line-height: 30px;
+}
+
+
+/* 底部 */
+.copyright{
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    background-color: #1e6845;
+}
+
+.copyright p{
+    color: #fff;
+    font-size: 12px;
+}
+
+.index-img{
+    margin: 20px;
+    height: 320px;
+}
+
+.index-img img{
+    width: 100%;
+}
+
+
+/* 昆明景点 style */
+.scenic-main {
+    margin: 40px auto;
+}
+
+.img-items {
+    margin-bottom: 20px;
+}
+
+.img-items .items {
+    float: left;
+    width: 47%;
+    margin-right: 30px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 30px;
+    background-color: #6BB592;
+}
+
+.spot-text{
+    height: 140px;
+}
+
+.spot-img {
+    height: 250px;
+    border-radius: 20px;
+}
+
+.spot-img img{
+    width: 100%;
+}
+
+.items h3{
+    color: #fff; 
+}
+
+.img-items p{
+    color: #fff; 
+    text-indent: 2em;
+    text-align: left;
+
+}
+
+.food-main {
+    margin: 40px;
+}
+
+.food-main h2{
+    border: none;
+}
+
+.food-main .img-items {
+    padding: 0;
+    margin: 30px auto;
+}
+
+.food-main .img-items .items{
+    position: relative;
+    padding: 0;
+    height: 440px;
+}
+
+.food-main .img-items .items>p{
+    color: #fff;
+    margin: 10px 20px;
+}
+
+.food-main .img-items .items>h3{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 10px 0;
+    background-color: #35B579;
+}
+
+.food-img img{
+    width: 100%;
+    height: 282px;
+}
+
+/* 昆明旅游 style */
+.section{
+    margin: 40px auto;
+}
+
+.sec-box .sec-img{
+    width: 40%;
+    height: 290px;
+    padding-top: 20px;
+    overflow: hidden;
+}
+
+.sec-box .sec-text{
+    width: 55%;
+    padding-top: 20px;
+}
+.sec-box .sec-img>img {
+    width: 100%;
+}
+
+.sec-box .sec-text span{
+    color: #1e6845;
+    font-weight: 900;
+}
+
+.sec-box .sec-text h2 {
+    width: 100%;
+    color: #103624;
+    text-align: center;
+    border: none;
+}
+
+/* 联系我们 style */
+.contactus-copyright{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+form {
+    width: 600px;
+    margin: 80px auto;
+    padding: 20px 90px;
+    background-color: #6BB592;
+    border-radius: 25px;
+    color: #fff;
+}
+
+form>input,form>textarea{
+    width: 100%;
+    margin:5px 0;
+    padding-left: 5px;
+    height: 30px;
+    border: none;
+    outline: none;
+}
+
+
+form>input.submit{
+    height: 40px;
+    width: 200px;
+    margin: 5px 110px;
+    padding: 0;
+    cursor: pointer;
+}
+
+form>input.submit:hover{
+    color: white;
+    background-color: #35B579;
+}
+
+form textarea{
+    width: 100%;
+    height: 200px;
+    padding: 5px;
+}
+
+
+form>input:hover,form>textarea:hover{
+    border: 2px solid #103624;
+}
